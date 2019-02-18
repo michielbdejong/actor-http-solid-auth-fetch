@@ -1,0 +1,80 @@
+{
+  "name": "@comunica/actor-http-solid-auth-fetch",
+  "version": "1.0.0",
+  "description": "A fetch http actor using the solid.auth library",
+  "lsd:module": "https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-http-solid-auth-fetch",
+  "lsd:components": "components/components.jsonld",
+  "lsd:contexts": {
+    "https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-http-solid-auth-fetch/^1.0.0/components/context.jsonld": "components/context.jsonld"
+  },
+  "lsd:importPaths": {
+    "https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-http-solid-auth-fetch/^1.0.0/components/": "components/"
+  },
+  "main": "index.js",
+  "typings": "index",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/comunica/actor-http-solid-auth-fetch"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "comunica",
+    "runner"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/comunica/actor-http-solid-auth-fetch/issues"
+  },
+  "homepage": "https://github.com/comunica/actor-http-solid-auth-fetch#readme",
+  "files": [
+    "components",
+    "lib/**/*.d.ts",
+    "lib/**/*.js",
+    "index.d.ts",
+    "index.js"
+  ],
+  "dependencies": {
+    "solid-auth-client": "^2.2.14"
+  },
+  "peerDependencies": {
+    "@comunica/bus-http": "^1.0.0",
+    "@comunica/core": "^1.0.0"
+  },
+  "devDependencies": {
+    "@comunica/bus-http": "^1.5.1",
+    "@comunica/core": "^1.4.0",
+    "@comunica/mediatortype-time": "^1.4.0",
+    "@types/jest": "^23.0.0",
+    "@types/node": "^10.11.3",
+    "jest": "^23.1.0",
+    "ts-jest": "^23.10.3",
+    "tslint": "^5.7.0",
+    "tslint-eslint-rules": "^5.1.0",
+    "typescript": "^3.1.6"
+  },
+  "jest": {
+    "globals": {
+      "ts-jest": {
+        "tsConfig": "test/tsconfig.json"
+      }
+    },
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    },
+    "testRegex": "/test/.*test\\.ts$",
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "collectCoverage": true
+  },
+  "scripts": {
+    "test": "jest ${1}",
+    "test-watch": "jest ${1} --watch",
+    "lint": "tslint lib/**/*.ts test/**/*.ts --exclude '**/*.d.ts'",
+    "build": "tsc",
+    "validate": "npm ls"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "lib": [
+      "dom",
+      "es6"
+    ],
+    "target": "es2017",
+    "noImplicitAny": false
+  },
+  "exclude": [
+    "__mocks__"
+  ]
+}
