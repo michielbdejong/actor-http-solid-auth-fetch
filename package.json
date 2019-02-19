@@ -48,7 +48,10 @@
     "@comunica/mediatortype-time": "^1.4.0",
     "@types/jest": "^23.0.0",
     "@types/node": "^10.11.3",
+    "coveralls": "^3.0.2",
     "jest": "^23.1.0",
+    "manual-git-changelog": "^1.0.1",
+    "pre-commit": "^1.2.2",
     "ts-jest": "^23.10.3",
     "tslint": "^5.7.0",
     "tslint-eslint-rules": "^5.1.0",
@@ -71,10 +74,15 @@
     "collectCoverage": true
   },
   "scripts": {
+    "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls",
+    "coveralls-ci": "cat ./coverage/lcov.info | coveralls",
     "test": "jest ${1}",
     "test-watch": "jest ${1} --watch",
+    "test-ci": "jest --ci --maxWorkers=4 --coverage",
     "lint": "tslint lib/**/*.ts test/**/*.ts --exclude '**/*.d.ts'",
     "build": "tsc",
-    "validate": "npm ls"
+    "validate": "npm ls",
+    "prepare": "npm run build",
+    "version": "manual-git-changelog onversion"
   }
 }
