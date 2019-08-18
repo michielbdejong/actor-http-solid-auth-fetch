@@ -36,7 +36,7 @@
     "index.js"
   ],
   "dependencies": {
-    "solid-auth-client": "^2.2.14"
+    "solid-auth-client": "2.3.0"
   },
   "peerDependencies": {
     "@comunica/bus-http": "^1.0.0",
