@@ -39,26 +39,26 @@
     "index.js"
   ],
   "dependencies": {
-    "solid-auth-client": "^2.2.14"
+    "solid-auth-client": "^2.4.1"
   },
   "peerDependencies": {
     "@comunica/bus-http": "^1.0.0",
     "@comunica/core": "^1.0.0"
   },
   "devDependencies": {
-    "@comunica/bus-http": "^1.5.1",
-    "@comunica/core": "^1.4.0",
-    "@comunica/mediatortype-time": "^1.4.0",
-    "@types/jest": "^24.0.6",
-    "@types/node": "^12.0.0",
-    "coveralls": "^3.0.2",
-    "jest": "^24.1.0",
+    "@comunica/bus-http": "^1.9.2",
+    "@comunica/core": "^1.9.2",
+    "@comunica/mediatortype-time": "^1.9.2",
+    "@types/jest": "^24.0.22",
+    "@types/node": "^12.12.6",
+    "coveralls": "^3.0.7",
+    "jest": "^24.9.0",
     "manual-git-changelog": "^1.0.1",
     "pre-commit": "^1.2.2",
-    "ts-jest": "^24.0.0",
-    "tslint": "^5.7.0",
+    "ts-jest": "^24.1.0",
+    "tslint": "^5.20.1",
     "tslint-eslint-rules": "^5.1.0",
-    "typescript": "^3.1.6"
+    "typescript": "^3.7.2"
   },
   "jest": {
     "globals": {
