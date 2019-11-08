@@ -49,5 +49,10 @@ describe('ActorHttpSolidAuthFetch', () => {
       return expect(actor.run({ input: <Request> { url: 'https://www.google.com/notfound' }})).resolves
         .toMatchObject({ status: 404 });
     });
+
+    it('should run on an unresolvable URI', () => {
+      return expect(actor.run({ input: <Request> { url: 'https://www.google.comz/' }})).rejects
+        .toThrow('FetchError');
+    });
   });
 });
